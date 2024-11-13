@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'About Page',
       theme: ThemeData.dark(),
-      home: const WelcomePage(), // Halaman pertama yang muncul
+      home: const WelcomePage(), 
     );
   }
 }
@@ -57,7 +57,6 @@ class AboutPage extends StatelessWidget {
             TextButton(
               child: const Text('Copy Link'),
               onPressed: () {
-                // Salin tautan ke clipboard (jika didukung di aplikasi)
                 Navigator.of(context).pop();
               },
             ),
@@ -99,7 +98,7 @@ class AboutPage extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
-                  image: AssetImage('assets/sarah.jpg'), // Ganti dengan path foto Anda
+                  image: AssetImage('assets/sarah.jpg'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -130,7 +129,7 @@ class AboutPage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Image.asset(
-                    'assets/kucing.jpeg', // Ganti dengan path gambar kucing
+                    'assets/kucing.jpeg', 
                     width: 50,
                     height: 50,
                     fit: BoxFit.cover,
@@ -142,7 +141,7 @@ class AboutPage extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Image.asset(
-                    'assets/memasak.jpeg', // Ganti dengan path gambar memasak
+                    'assets/memasak.jpeg', 
                     width: 50,
                     height: 50,
                     fit: BoxFit.cover,
@@ -173,7 +172,7 @@ class AboutPage extends StatelessWidget {
                     _showLinkDialog(
                       context,
                       'Instagram',
-                      'https://www.instagram.com/sarahalns', // Ganti dengan tautan Instagram Anda
+                      'https://www.instagram.com/sarahalns', 
                     );
                   },
                 ),
@@ -187,7 +186,7 @@ class AboutPage extends StatelessWidget {
                     _showLinkDialog(
                       context,
                       'LinkedIn',
-                      'https://www.linkedin.com/in/sarahauliannisaaini', // Ganti dengan tautan LinkedIn Anda
+                      'https://www.linkedin.com/in/sarahauliannisaaini', 
                     );
                   },
                 ),
